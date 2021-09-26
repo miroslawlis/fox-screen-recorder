@@ -1,5 +1,5 @@
-<h4>Fox screen recorder</h4>
-Made in electron.
+<h4>:fox_face: Fox screen recorder</h4>
+Made in electron, vanilla JavaScript.
 
 No audio recording atm (TODO).
 
@@ -10,4 +10,4 @@ To build:
 or
 ```npm run build-linux```
 
-Build are generated in ```./dist``` folder.
+Builds are generated in ```./dist``` folder.
