@@ -1,0 +1,75 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 1vh;
+}
+
+#main-content {
+  display: flex;
+}
+
+.left {
+  width: 70%;
+}
+.right {
+  margin-left: 2vw;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-header object {
+  height: 1em;
+}
+
+.button {
+  border: 0;
+}
+
+.button#startButton:not(:disabled) {
+  background-color: #fb4242;
+  color: white;
+}
+
+.button#stopButton:not(:disabled) {
+  background-color: #9d5ce4;
+  color: white;
+}
+
+.button#getSourcesButton:not(:disabled) {
+  background-color: #50b77e;
+  color: white;
+}
+
+*:disabled {
+  background-color: rgb(190, 190, 190);
+  color: rgb(243, 243, 243);
+}
+select,
+.button,
+input {
+  padding: 1.8vh 0.5vw;
+  margin-bottom: 1.8vh;
+  min-width: 12vw;
+}
+
+video {
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+  width: 100%;
+  height: auto;
+}
+
+#fox-logo {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Screen recorder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="renderer.js"></script>
+</head>
+
+<body>
+  <div id="main-content">
+    <div class="left">
+      <video></video>
+    </div>
+
+    <div class="right col">
+      <button id="startButton" class="button" disabled>Start</button>
+      <button id="stopButton" class="button" disabled>Stop</button>
+
+      <button id="getSourcesButton" class="button">Get Video Sources</button>
+
+      <select id="sourceSelect" onchange="controlsStates('source-selected-redy-to-record', this)" disabled>
+        <option value="empty">No sources</option>
+      </select>
+
+      <object id="fox-logo" data="./assets/svg/icon_fox.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
+</body>
+
+</html>

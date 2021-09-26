@@ -1,0 +1,59 @@
+{
+  "name": "fox-screen-recorder",
+  "productName": "Fox screen recorder",
+  "version": "1.0.0",
+  "description": "Fox screen recorder",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build-windows": "electron-builder build --win --x64",
+    "build-linux": "electron-builder build --linux"
+  },
+  "keywords": [],
+  "author": "Mirosław Lis",
+  "license": "MIT",
+  "build": {
+    "appId": "fox-screen-recorder",
+    "productName": "Fox screen recorder",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "build/icons/png/",
+      "publish": [
+        "github"
+      ]
+    },
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "build/icons/png/1024x1024.png",
+      "publish": [
+        "github"
+      ]
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^14.0.1",
+    "electron-builder": "^22.11.7"
+  }
+}
